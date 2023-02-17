@@ -5,7 +5,7 @@ Install Sockperf via cloud-init to test network latency
 Source:  https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-test-latency 
 
 PPG-ID is its resource ID for example:
-"/subscriptions/<subid>/resourceGroups/TEST-RG/providers/Microsoft.Compute/proximityPlacementGroups/PPG01-AMS"
+"/subscriptions/SUBID/resourceGroups/TEST-RG/providers/Microsoft.Compute/proximityPlacementGroups/PPG01-AMS"
 
 Assumptions include the following
 - Ubuntu apt-get works (internet connection is available)
