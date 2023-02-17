@@ -27,7 +27,6 @@ variable "vm_size" {
 variable "ppg_id" {
   description = "Proximity Placement Group name"
   type        = string
-  default     = "/subscriptions/8bdb997c-10e5-403f-9bdd-324b3f520a56/resourceGroups/3DS-NETWORKTEST-RG/providers/Microsoft.Compute/proximityPlacementGroups/3DS-PPG01-AMS"
 }
 variable "nic_enable_accelerated_networking" {
   description = "Should Accelerated Networking be enabled? Defaults to `false`."
