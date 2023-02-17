@@ -4,18 +4,20 @@ Deploy an Azure Linux VM into an existing VNET and Proximity Placement Group
 Install Sockperf via cloud-init to test network latency
 Source:  https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-test-latency 
 
+PPG-ID is its resource ID for example:
+"/subscriptions/<subid>/resourceGroups/TEST-RG/providers/Microsoft.Compute/proximityPlacementGroups/PPG01-AMS"
 
-Assumptions: 
+Assumptions include the following
 - Ubuntu apt-get works (internet connection is available)
 - SSH is possible via Bastion or VPN or Express Route connection. Otherwise, add a Public IP. 
 
-# Receiver setup von VM01
+Receiver setup von VM01
 sudo sockperf sr --tcp -i 10.6.192.7 -p 4001
 
-# Sender / Client Setup  on VM02
+Sender / Client Setup  on VM02
 sudo sockperf ping-pong -i 10.6.192.7  --tcp -m 101 -t 300 -p 4001  --full-rtt 
 
-# Adjust the internal IP address and socket/port as needed
+Adjust the internal IP address and socket/port as needed
 
 
 
