@@ -1,0 +1,12 @@
+#cloud-config
+
+package_upgrade: true
+
+packages:
+  - sockperf
+
+
+runcmd:
+  - mkdir /test
+  - echo "hello-test" >> /test/test.txt
+  - apt-get update -y
