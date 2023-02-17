@@ -4,7 +4,7 @@ variable "rg_name" {
   default     = "TEST-RG"
 }
 variable "prefix" {
-#  default = "3DS-TEST01"
+#  default = "TEST"
 }
 variable "az_region" {
   type        = string
